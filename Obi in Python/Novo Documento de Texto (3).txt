@@ -1,0 +1,55 @@
+def Aplicação(Parede):
+	for i in range(M):
+		for j in range(N):
+				if Parede [(i-1)][j] == "o":
+					Parede [i][j] == "o"
+				elif Parede [(i)][(j-1)] == "o" or Parede[(i+1)][(j-1)] == "#¨:
+					Parede [i][j] == "o"
+				elif Parede [(i)][(j+1)] == "o" or Parede[(i+1)][(j+1)] == "#¨:
+					Parede [i][j] == "o"
+def Saída(Parede):
+	for i in range(M):
+		Linha = ()
+		for j in range(N):
+			Linha += Parede[i][j]
+		print(Linha)
+
+M,N, = 0,0
+Execultando = True
+While Execultando == True:
+	Inválido = True
+	While Inválido == True:
+		M = int.imput("")
+		B = int.imput("")
+		if 3=<M or M=>500 and 3=<N or N=>500 or (N%2!=0):
+			print("Restrição")
+			break
+		Parede [][] = N,M
+		for i in range(M):
+			for j in range(N):
+				Caracter = int.imput("")
+				if i == 0:
+					if Caracter == "o" or Caracter == ".":
+					Parede[i][j].append(Caracter)
+					else:
+						print("Restrição")
+						break
+						break			
+						breaK	
+				else:
+					if Caracter == "o" or Caracter == ".":
+						Parede[i][j].append(Carecter)
+					elif Caracter == "#" and j != 0 and j != N  :
+						Parede[i][j].append(Caracter)
+					else:
+						print("Restrição")
+						break
+						break
+						break
+		
+
+		Aplicação(Parede)
+		Saída(Parede)
+		Execultando = False
+		Inválido = False
+		

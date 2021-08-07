@@ -1,0 +1,34 @@
+N = int(input())
+ABE = []
+for x in range((N-1)):
+	Entrada = str(input())
+	ABE.append(Entrada)
+Rodovias = []
+for x in ABE:
+	Rodovia = []
+	for y in x.split():
+		Rodovia.append(int(y))
+	Rodovias.append(Rodovia)
+Total = 0
+if 2 <= N and  N <= 50000:
+	Antecessora = " "
+	for Rodovia in Rodovias: 
+		if 1 <= Rodovia[0] and Rodovias[0] <= N:
+			if 1 <= Rodovia[1] and Rodovias[1] <= N:
+				if 0 <= Rodovia[2] and Rodovias[2] <= 1:
+					if Rodovia[2] != Antecessora:
+						Antecessora = Rodovia[2]
+						Total +=1
+				else:
+					Total = 0
+					break
+			else:	
+				Total = 0
+				break
+		else:
+			Total = 0
+			break
+	if Total != 0:
+		print(Total)
+ 							 
+		 

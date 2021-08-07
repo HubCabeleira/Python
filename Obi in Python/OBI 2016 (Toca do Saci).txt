@@ -1,0 +1,46 @@
+NM = str(input())
+N = NM[0]
+M = NM[2]
+Restrição = True
+for x in range(1,1000):
+	Válido = (x)
+	if Válido == N:
+		N = x
+		Restrição = False
+		break
+if Restrição == False:
+	for x in range(1,1000):
+		Válido = (x)
+		if Válido == N:
+			M = x
+			Retrição = True
+	if Restrição == True:
+		Linhas = []
+		for x in range(M):
+			Restrição = False
+			Linha = str(input())
+			Colunas = [] 
+ 			for y in range(N*2):
+				if (y == 0) or (y%2 == 0):
+					if (Linha[y] == "0") or (Linha[y] == "1") or (Linha == "2") or (Linha == "3"):
+						Colunas.append(Linha[y])
+					else:
+						break
+						break
+ 			Linhas.append(Colunas)
+			Restrição = True
+		if Restrição == True:
+			Válido = 0
+			for x in range (len(Linhas)):
+				for y in (len(Linhas)):
+					if Linhas[x][y] == "2" :
+						Válido += 1
+					if Linhas[x][y] == "3" :
+						Válido += 1
+			if Válido != 2:
+				Restrição = False
+			if Restrição == False:
+				for x in range(len(Linhas)):
+					for y in range(len(Linhas)):
+						 	
+

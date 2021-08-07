@@ -1,0 +1,7 @@
+N = int(input())
+if N>=0 and N<=10000:
+	Resultante = 1
+	Final += 1
+	for x in range(0,Final):
+		Resultante += x
+	print(Resultante)

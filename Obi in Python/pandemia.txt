@@ -1,0 +1,32 @@
+NM = str(input())
+Ami_Reu = []
+for x in NM.split():
+	Ami_Reu.append(int(x))
+
+Transmisor = str(input())
+Transmissao = []
+for x in transmisor.split():
+	Trasmissao.append(int(x))
+
+Encontros = []
+for x in len(Ami_Reu[1]):
+	IR = int(input)
+	Encontros.append(IR)
+
+Encontro = []
+for Reunião in Encontros:
+	Quando = []
+	for y in Reunião.split():
+		Quadro.append(y)
+	Quadro = []
+
+
+if 2 <= Ami_Reu[0] and Ami_Reu[0] <= 1000:
+	if 2 <= Ami_Reu[1] and Ami_Reu[1] <= 1000:
+		if 1<=IR[0] and IR[0]<= Ami_Reu[0]:
+			if 1<=IR[1] and IR[1]<= Ami_Reu[1]:
+				if IR[1]<Ami_Reu[0] and IR[1]<Ami_Reu[0]:
+					print(Resultante)
+
+
+
